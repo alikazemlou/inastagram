@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" href="{% static 'instagram/css/style.css' %}">
+</head>
+<body>
+    <section id="top-section">
+        <img class="logo-top-lef" src="{% static 'instagram/images/settings.png' %}" alt="setting">
+        <a href="/"  class="center-text"><span>instagram</span></a>
+        <img class="logo-top-right" src="{% static 'instagram/images/paper-plane.png' %}" alt="share">
+    </section>
+    <section id="user-section">
+        <img class="user-icon" src="{% static 'instagram/images/user.png' %}" alt="user">
+        <img class="user-icon" src="{% static 'instagram/images/user.png' %}" alt="user">
+        <img class="user-icon" src="{% static 'instagram/images/user.png' %}" alt="user">
+        <img class="user-icon" src="{% static 'instagram/images/user.png' %}" alt="user">
+        <img class="user-icon" src="{% static 'instagram/images/user.png' %}" alt="user">
+
+    </section>
+    <section id="post-section">
+        <img class="post-user" src="{% static 'instagram/images/user.png' %}" alt="user"><span style="cursor: pointer; font-size: 25px ; position: absolute; padding-left: 10px;">Username</span>
+        <img class="post-pic" src="{% static 'instagram/images/unknown-mail.png' %}" alt="user">
+        <img class="like-comment" src="{% static 'instagram/images/heart.png' %}" alt="heart">
+        <img class="like-comment" src="{% static 'instagram/images/chat.png' %}" alt="chat">
+        <img class="like-comment" src="{% static 'instagram/images/paper-plane.png' %}" alt="share">
+        <img class="like-comment-dots" src="{% static 'instagram/images/dots.png' %}" alt="dots">
+
+        <div><b>Username</b></div>
+        <div>
+            Post Body
+        </div>
+        <div style="opacity: 50%;">created time</div>
+        <br>
+        <br>
+    </section>
+    <section id="footer-section">
+        <a href="/"><img class="footer-icon" src="{% static 'instagram/images/house.png' %}" alt="home"></a>
+        <a href="#"><img class="footer-icon" src="{% static 'instagram/images/magnifying-glass.png' %}" alt="serach"></a>
+        <a href="#"><img class="footer-icon" src="{% static 'instagram/images/plus.png' %}" alt="plus"></a>
+        <a href="#"><img class="footer-icon" src="{% static 'instagram/images/user.png' %}" alt="user"></a>
+    </section>
+</body>
+</html>
